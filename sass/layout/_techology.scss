@@ -1,0 +1,37 @@
+.techology {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.technology-title {
+    display: none;
+}
+.technology-list__item {
+    width: 270px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.techology-list {
+    display: flex;
+    padding: 0;
+}
+
+.technology-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--bakrnd-color-second);
+    margin-bottom: 30px;
+}
+
+.technology-list__title {
+    margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,221 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--text-banner-color);
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    fill: #000000;
+    background-color: rgba(255, 255, 255, 1);
+    transition: fill var(--animation-time);
+
+    &:hover,
+    &:focus
+    {
+        fill: var(--accent-color);
+    }
+}
+
+.icon-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-form {
+    display: block;
+}
+
+.title-modal {
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color-tittle);
+    margin-bottom: 12px;
+}
+
+.label-title {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+}
+
+.form-lable {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color-first);
+}
+
+.form-fild {
+    margin-bottom: 10px;
+}
+
+.modal-position-icon {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: fill var(--animation-time);
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    transition: border var(--animation-time);
+    cursor: pointer;
+
+    &:focus-within
+    {
+        outline: none;
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
+    &:focus-within+.modal-icon 
+    {
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    cursor: pointer;
+    
+    &::placeholder 
+    {
+        color: #75757580;
+    }
+
+}
+
+.label-title-comment {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--text-color-first);
+    margin-bottom: 4px;
+}
+
+.label-comment {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.comment {
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    transition: border var(--animation-time);
+
+    &:focus-within {
+            outline: none;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+        }
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color-first);
+}
+
+.checkbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    outline: 2px solid #212121;
+    outline-offset: -2px;
+    border-radius: 2px;
+    margin-right: 4px;
+    transition: background-color var(--animation-time), outline var(--animation-time);
+
+.form-accept:checked+& {
+        background-color: var(--accent-color);
+        outline: 2px solid var(--accent-color);
+        outline-offset: -2px;
+    }
+}
+
+.modal-form-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 56px 10px 55px;
+    font-weight: 700;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-banner-color);
+    border: 0;
+    border-radius: 4px;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contract {
+    color: var(--accent-color);
+}

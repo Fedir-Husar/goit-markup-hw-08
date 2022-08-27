@@ -1,0 +1,20 @@
+:root {
+    /*   Цветовая палитра  */
+    --bakrnd-color-first: #E5E5E5;
+    --bakrnd-color-second: #F5F4FA;
+    --footer-color: #2F303A;
+    --text-color-first: #757575;
+    --text-color-tittle: #212121;
+    --text-color-footer: rgba(255, 255, 255, 0.6);
+    --text-banner-color: #FFFFFF;
+    --accent-color: #2196F3;
+
+    /*Шрифты */
+    --first-font: "Roboto";
+    --logo-font: "Raleway";
+
+    /* Функции */
+    --transition-duration: 250ms;
+    --time-funcsion: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

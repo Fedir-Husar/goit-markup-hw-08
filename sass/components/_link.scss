@@ -1,0 +1,12 @@
+.link {
+  color: var(--text-color-tittle);
+  text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active
+    {
+        color: var(--accent-color);
+        fill: currentColor;
+    }
+}

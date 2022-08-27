@@ -1,0 +1,24 @@
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: var(--text-color-first);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.main {
+    line-height: 1.71;
+}
+
