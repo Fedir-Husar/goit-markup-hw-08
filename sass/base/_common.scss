@@ -16,8 +16,13 @@ body {
 
 .list {
     list-style: none;
+    
 }
-
+.list-mobile{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
 .main {
     line-height: 1.71;
 }

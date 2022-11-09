@@ -1,3 +1,11 @@
+@media screen and (max-width:767px) {
+.works{
+   display: none;
+}
+}
+
+@media screen and (min-width:768px){
+
 .works {
     padding-bottom: 94px;
 }
@@ -43,4 +51,6 @@
     text-transform: uppercase;
     color: var(--text-banner-color);
     margin: 0;
+}
+
 }
