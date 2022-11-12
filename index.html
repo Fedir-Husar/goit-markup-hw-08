@@ -18,11 +18,10 @@
   <body>
     <header class="header">
       <div class="container main-nav">
+        <a class="link logo" href="./index.html" lang="en"
+          >Web<span class="logo-studio">Studio</span></a
+        >
         <nav class="header-nav">
-          <a class="link logo" href="./index.html" lang="en"
-            >Web<span class="logo-studio">Studio</span></a
-          >
-
           <ul class="list header-list">
             <li class="header-list__item">
               <a class="link header-list__link current" href="./index.html">
@@ -44,12 +43,9 @@
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
         </button>
-        <ul class="list header-list">
-          <li class="header-list__item">
-            <a
-              class="link header-list__link contakts"
-              href="mailto:info@devstudio.com"
-            >
+        <ul class="list header-list-cont contacts">
+          <li class="link-mail header-list__item">
+            <a class="link header-list__link" href="mailto:info@devstudio.com">
               <svg class="header-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -57,7 +53,7 @@
             >
           </li>
           <li class="header-list__item">
-            <a class="link header-list__link contakts" href="tel:+380961111111">
+            <a class="link header-list__link" href="tel:+380961111111">
               <svg class="header-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -102,7 +98,7 @@
                 <a
                   lang="en"
                   href="mailto:info@devstudio.com"
-                  class="mobile-contacts-list__contact link"
+                  class="mobile-contacts-list__mail link"
                 >
                   info@devstudio.com
                 </a>
@@ -161,7 +157,9 @@
       </section>
       <section class="techology">
         <div class="container">
-          <h2 class="title technology-title">Наши особенности</h2>
+          <h2 class="title technology-title visually-hidden">
+            Наши особенности
+          </h2>
           <ul class="list techology-list">
             <li class="technology-list__item">
               <div class="technology-list__icon">
@@ -299,34 +297,35 @@
                     ./images/desktop/team/igor-270/igor-270.jpg    1x,
                     ./images/desktop/team/igor-270/igor-270@2x.jpg 2x
                   "
-                  media="(min-width=1200px)"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
                 />
                 <source
                   srcset="
                     ./images/tablet/team/igor-354/igor-354.jpg    1x,
                     ./images/tablet/team/igor-354/igor-354@2x.jpg 2x
                   "
-                  media="(min-width=768px)"
+                  media="(min-width: 768px)"
+                  sizes="354px"
                 />
                 <source
                   srcset="
                     ./images/mobile/team/igor-450/igor-450.jpg    1x,
                     ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
                   "
-                  media="(max-width=767px)"
+                  media="(max-width: 767px)"
+                  sizes="450px"
                 />
                 <img
                   class="team-list__img"
-                  src="./images/desktop/team/igor-270/igor-270.jpg"
+                  src="./images/desktop/team/igor-270/igor-270@2x.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-worker">
                 <h3 class="title team-worker__name">Игорь Демьяненко</h3>
                 <p class="team-worker__descr" lang="en">Product Designer</p>
-                <ul class="list team-social">
+                <ul class="list team-social list-social">
                   <li class="team-social__item">
                     <a class="team-social__link" href="">
                       <svg class="team-social__img" width="20" height="20">
@@ -365,30 +364,35 @@
                     ./images/desktop/team/olga-270/olga-270.jpg    1x,
                     ./images/desktop/team/olga-270/olga-270@2x.jpg 2x
                   "
-                  media="(min-width=1200px)"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
                   srcset="
                     ./images/tablet/team/olga-354/olga-354.jpg    1x,
                     ./images/tablet/team/olga-354/olga-354@2x.jpg 2x
                   "
-                  media="(min-width=768px)"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
                   srcset="
                     ./images/mobile/team/olga-450/olga-450.jpg    1x,
                     ./images/mobile/team/olga-450/olga-450@2x.jpg 2x
                   "
-                  media="(max-width=767px)"
+                  media="(max-width: 767px)"
+                  sizes="354px"
                 />
                 <img
                   class="team-list__img"
                   src="./images/mobile/team/olga-450/olga-450.jpg"
                   alt="Ольга Репина"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-worker">
                 <h3 class="title team-worker__name">Ольга Репина</h3>
                 <p class="team-worker__descr" lang="en">Frontend Developer</p>
-                <ul class="list team-social">
+                <ul class="list team-social list-social">
                   <li class="team-social__item">
                     <a class="team-social__link" href="">
                       <svg class="team-social__img" width="20" height="20">
@@ -427,30 +431,35 @@
                     ./images/desktop/team/nikolay-270/nikolay-270.jpg    1x,
                     ./images/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x
                   "
-                  media="(min-width=1200px)"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
                   srcset="
                     ./images/tablet/team/nikolay-354/nikolay-354.jpg    1x,
                     ./images/tablet/team/nikolay-354/nikolay-354@2x.jpg 2x
                   "
-                  media="(min-width=768px)"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <source
                   srcset="
                     ./images/mobile/team/nikolay-450/nikolay-450.jpg    1x,
                     ./images/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x
                   "
-                  media="(max-width=767px)"
+                  media="(max-width:767px)"
+                  sizes="450"
                 />
                 <img
                   class="team-list__img"
                   src="./images/mobile/team/nikolay-450/nikolay-450.jpg"
                   alt="Николай Тарасов"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-worker">
                 <h3 class="title team-worker__name">Николай Тарасов</h3>
                 <p class="team-worker__descr" lang="en">Marketing</p>
-                <ul class="list team-social">
+                <ul class="list team-social list-social">
                   <li class="team-social__item">
                     <a class="team-social__link" href="">
                       <svg class="team-social__img" width="20" height="20">
@@ -489,34 +498,36 @@
                     ./images/desktop/team/mykhail-270/mykhail-270.jpg    1x,
                     ./images/desktop/team/mykhail-270/mykhail-270@2x.jpg 2x
                   "
-                  media="(min-width=1200px)"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
                 />
                 <source
                   srcset="
                     ./images/tablet/team/mykhail-354/mykhail-354.jpg    1x,
                     ./images/tablet/team/mykhail-354/mykhail-354@2x.jpg 2x
                   "
-                  media="(min-width=768px)"
+                  media="(min-width:768px)"
+                  sizes="354px"
                 />
                 <source
                   srcset="
                     ./images/mobile/team/mykhail-450/mykhail-450.jpg    1x,
                     ./images/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x
                   "
-                  media="(max-width=767px)"
+                  media="(max-width:767px)"
+                  sizes="450px"
+                  ;
                 />
                 <img
                   class="team-list__img"
                   src="./images/mobile/team/mykhail-450/mykhail-450.jpg"
                   alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-worker">
                 <h3 class="title team-worker__name">Михаил Ермаков</h3>
                 <p class="team-worker__descr" lang="en">UI Designer</p>
-                <ul class="list team-social">
+                <ul class="list team-social list-social">
                   <li class="team-social__item">
                     <a class="team-social__link" href="">
                       <svg class="team-social__img" width="20" height="20">
