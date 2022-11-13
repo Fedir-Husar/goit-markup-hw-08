@@ -78,6 +78,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        
+    }
 }
 
 
@@ -210,7 +215,7 @@ display: inline-block;
     }
 
     @media screen and (min-width:1200px) {
-        display: block;
+        display: flex;
         width: 570px;
         height: 86px;
         margin-left: 93px;
@@ -218,12 +223,14 @@ display: inline-block;
     }
 }
 .footer-form-fild {
-    @media screen and (min-width:1200){
-        display: flex;
-    }
+
+        @media screen and (min-width: 1200px) {
+                display: flex;
+            }
         @media screen and (min-width:768px) {
             text-align: center;
         }
+               
 }
 
 .form-list button{
@@ -341,6 +348,9 @@ display: inline-block;
     cursor: pointer;
 }
 
+.form-list:not(:last-child) {
+    margin-right: 12px;
+}
 .button-footer-icon {
     position: absolute;
     top: 13px;
