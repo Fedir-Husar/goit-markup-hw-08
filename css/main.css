@@ -686,7 +686,7 @@ body {
 .footer-container {
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
     align-items: baseline;
@@ -744,7 +744,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 12px;
   padding-bottom: 20px;
 }
 
@@ -767,10 +766,12 @@ body {
   }
 }
 
-.social-footer {
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .social-footer {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .social-footer {
@@ -789,7 +790,6 @@ body {
 
 .footer-social {
   display: flex;
-  padding-bottom: 30px;
   padding-left: 0px;
   justify-content: center;
 }
@@ -879,9 +879,45 @@ body {
   }
 }
 
-.footer-form-fild {
-  display: flex;
-  margin-bottom: 0px;
+@media screen and (min-width: 1200) {
+  .footer-form-fild {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form-fild {
+    text-align: center;
+  }
+}
+
+.form-list button {
+  align-items: center;
+}
+
+.form-list input {
+  height: 50px;
+  width: 290px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--color-white);
+  transition: color 250ms linear;
+}
+@media screen and (min-width: 480px) {
+  .form-list input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-list input {
+    width: 358px;
+    margin: 0;
+  }
 }
 
 .footer-subscribe {
@@ -910,7 +946,43 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 10px 28px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-btn {
+    margin-left: 139px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-btn {
+    margin: 0;
+  }
+}
+
 .button-footer {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   border-radius: 4px;
   border: none;
