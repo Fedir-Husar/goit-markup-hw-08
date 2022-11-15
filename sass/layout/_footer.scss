@@ -61,8 +61,16 @@
     color: var(--text-color-footer);
     transition: color var(--animation-time);
 
+   
+
 }
 
+ @media screen and (min-width:1200px) {
+
+.adr-footer{
+    text-align: left;
+}
+ }
 .logo-studio-footer {
     color: var(--bakrnd-color-first);
 }

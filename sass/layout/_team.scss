@@ -21,6 +21,12 @@
     gap: 30px;
 }
 
+        .team-list__img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
 .team-list__item {
     width: 100%;
     left: 815px;
@@ -38,6 +44,7 @@
         width: calc((100% - 90px) / 4);
     }
 
+    
 }
     
 .team-worker {
